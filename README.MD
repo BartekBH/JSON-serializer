@@ -5,7 +5,8 @@ JSON serializer written in Scala, which provides converters for:
 - Boolean
 - Char
 - String
-- Null
+- List
+- Array
 
 For custom types you need to define custom implicit converter, e.g.
 
