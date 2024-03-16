@@ -69,24 +69,4 @@ object JSONTypes {
     }
       .mkString("{\n", ",\n", "\n}")
   }
-
-//  final case class JSONObject(values: Map[String, JSONValue]) extends JSONValue {
-//    def stringify: String = values.map {
-//      case (key, value: JSONObject) =>
-//        "  \"" + key + "\":" + value.stringify
-//      case (key, value: JSONList) =>
-//        "  \"" + key + "\":" + value.stringify
-//      case (key, value: JSONArray) =>
-//        "  \"" + key + "\":" + value.stringify
-//      case (key, value) =>
-//        "    \"" + key + "\":" + value.stringify
-//    }.mkString("{\n", ",\n", "\n}")
-//  }
-
-//  final case class JSONObject(values: Map[String, JSONValue]) extends JSONValue {
-//    def stringify: String = values.map {
-//        case (key, value) => "\"" + key + "\":" + value.stringify
-//      }
-//      .mkString("{", ",", "}")
-//  }
 }
